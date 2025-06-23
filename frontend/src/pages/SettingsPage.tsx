@@ -225,6 +225,15 @@ const SettingsPage: React.FC = () => {
             >
               中文
             </button>
+            <button
+              className={`px-3 py-1.5 rounded-md transition-colors text-sm ${currentLanguage.startsWith('th')
+                ? 'bg-blue-500 text-white'
+                : 'bg-blue-100 text-blue-800 hover:bg-blue-200'
+                }`}
+              onClick={() => handleLanguageChange('th')}
+            >
+              ไทย
+            </button>
           </div>
         </div>
       </div>
